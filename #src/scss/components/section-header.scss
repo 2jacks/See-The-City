@@ -1,0 +1,19 @@
+.section-header {
+  width: 60%;
+  margin: 0 auto 60px auto;
+  &__title {
+    @include decor-text();
+    font-size: 42px;
+    color: $black;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+  &__description {
+    @include plain-text();
+    text-align: center;
+    &--white {
+      color: #fff;
+    }
+  }
+}

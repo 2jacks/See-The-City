@@ -1,0 +1,37 @@
+.add {
+  @include section-padding();
+  background-color: $red-300;
+}
+.add-form {
+  &__form {
+
+  }
+  &__input {
+    background-color: transparent;
+    padding: .3em 2em;
+    border: none;
+    border-bottom: 3px solid #fff;
+
+    @include speech-text();
+    font-size: 16px;
+    color: #fff;
+
+    width: 100%;
+    margin-bottom: 30px;
+
+    &::-webkit-input-placeholder {color:#fff; transition: opacity $transition;}
+    &::-moz-placeholder          {color:#fff; transition: opacity $transition;}
+    &:-moz-placeholder           {color:#fff; transition: opacity $transition;}
+    &:-ms-input-placeholder      {color:#fff; transition: opacity $transition;}
+    &:focus {
+      outline: none;
+      &::-webkit-input-placeholder {opacity: .3;}
+      &::-moz-placeholder          {opacity: .3;}
+      &:-moz-placeholder           {opacity: .3;}
+      &:-ms-input-placeholder      {opacity: .3;}
+    }
+  }
+  &__button {
+    margin-top: 20px;
+  }
+}

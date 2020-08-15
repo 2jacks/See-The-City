@@ -1,0 +1,34 @@
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: $red-400;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  &__inner {
+    height: 70px;
+  }
+  &__nav-item {
+    height: 100%;
+    display: flex;
+  }
+  &__nav-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $transition;
+    &:hover {
+      background-color: $red-200;
+    }
+  }
+  &__nav-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+}
