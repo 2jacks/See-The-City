@@ -61,11 +61,11 @@ function init(){
             {
                 preset: 'islands#violetDotIconWithCaption',
                 balloonContentHeader: item.address,
-                balloonContentBody: `<img class="gallery__img gallery__img--in-balloon" src="./${item.imgUrl}" alt="placePhoto"/>`
+                balloonContentBody: `<img class="gallery__img gallery__img--in-balloon" src="${item.imgUrl}" alt="placePhoto"/>`
             },
             {
                 balloonContentLayout: ymaps.templateLayoutFactory.createClass(
-                    `<img class="gallery__img gallery__img--in-balloon" src="./${item.imgUrl}" alt="placePhoto"/>`
+                    `<img class="gallery__img gallery__img--in-balloon" src="${item.imgUrl}" alt="placePhoto"/>`
                 ),
 
             },
