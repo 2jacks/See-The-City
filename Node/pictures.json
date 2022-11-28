@@ -1,0 +1,18 @@
+[
+        {
+            "url": "img/gallery/kmarx.jpg",
+            "address": "Уфа, Мустая Карима",
+            "author": "jacks"
+        },
+        {
+            "url": "img/gallery/salavat.jpg",
+            "address": "Уфа, Заки Валиди",
+            "author": "jacks"
+        },
+        {
+            "url": "img/gallery/road.jpg",
+            "address": "Уфа, проспект Салавата Юлаева",
+            "author": "jacks"
+        }
+ 
+]

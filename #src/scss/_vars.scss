@@ -1,0 +1,76 @@
+/*Vars*/
+//Colors
+$plain-text: #999999;
+$aqua: #95e1d3;
+$red-100: #f498a7;
+$red-200: #e57a8c;
+$red-300: #e07587;
+$red-400: #e35e71;
+$yellow: #f5d3ad;
+$black: #333333;
+//Typography
+$lh: 1.5em;
+$fz--plain-text: 15px;
+//Utils
+$p--section-lg: 100px 0 100px 0;
+$p--section-md: 50px 0 50px 0;
+$p--section-sm: 30px 0 30px 0;
+
+$transition: .2s linear;
+$long-transition: 1.5s linear;
+
+/*Mixins*/
+@mixin section-padding {
+  padding: $p--section-lg;
+  @include  media-breakpoint-down(md) {
+    padding: $p--section-md;
+  }
+  @include  media-breakpoint-down(sm) {
+    padding: $p--section-sm;
+  }
+}
+@mixin plain-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: $plain-text;
+  font-size: 15px;
+}
+
+@mixin attention-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+@mixin sub-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin decor-text {
+  font-family: 'KaushanScript', sans-serif;
+  font-weight: 400;
+}
+
+@mixin speech-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin after-line--red {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: $c--red;
+  margin: 0 auto;
+}
+
+@mixin after-line--white {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 0 auto;
+}

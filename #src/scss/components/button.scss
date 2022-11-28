@@ -1,0 +1,26 @@
+.button {
+  @include attention-text();
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+
+  padding: .4em 2em;
+  border: 3px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all $transition;
+
+  &:active, &:visited, &:focus {
+    outline: none;
+  }
+
+
+  &--add-form {
+    &:hover {
+      color: $red-100;
+      background-color: $aqua;
+      border: 3px solid $aqua;
+    }
+  }
+
+}

@@ -1,0 +1,54 @@
+.parallax {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+
+  height: 100vh;
+
+  overflow: hidden;
+  opacity: 1;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__city {
+    width: 120%;
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+    z-index: 5;
+  }
+  &__cloud {
+    max-width: 200px;
+    height: auto;
+
+    position: absolute;
+    &--1 {
+      max-width: 400px;
+      right: 5%;
+      top: 20%;
+      z-index: 2;
+    }
+    &--2 {
+      width: 120%;
+      max-width: 800px;
+      left: 10%;
+      top: 10%;
+      z-index: 3;
+    }
+  }
+  &__plane {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 3;
+  }
+}

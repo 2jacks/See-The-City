@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>See The City</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bf471ab0-d74e-4fc8-9845-22b2e51c07f1&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row header__inner align-items-center">
+            <div class="col-3 header__nav-item">
+                <a href="#hero" class="header__nav-link">
+                    <img class="logo" src="img/icons/bird.svg" alt="">
+                </a>
+            </div>
+            <div class="col-3 header__nav-item">
+                <a href="#" class="header__nav-link">
+                    <svg class="header__nav-icon">
+                        <use href="img/icons/icons.svg#download"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-3 header__nav-item">
+                <a href="#" class="header__nav-link">
+                    <svg class="header__nav-icon">
+                    <use href="img/icons/icons.svg#map"></use>
+                </svg>
+                </a>
+            </div>
+            <div class="col-3 header__nav-item">
+                <a href="#" class="header__nav-link">
+                    <svg class="header__nav-icon">
+                        <use href="img/icons/icons.svg#user"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="hero" class="hero">
+    <div class="hero__mask"></div>
+    <div class="parallax">
+        <img src="img/parallax/bg.webp" srcset="img/parallax/bg.webp, img/parallax/bg.png" alt=""
+             class="parallax__layer parallax__bg"
+             data-speed="10">
+        <img src="img/parallax/city.webp" srcset="img/parallax/city.webp, img/parallax/city.png" alt=""
+             class="parallax__layer parallax__city"
+             data-speed="45">
+        <img src="img/parallax/rcloud-1.webp" srcset="img/parallax/rcloud-1.webp, img/parallax/rcloud-1.png" alt=""
+             class="parallax__layer parallax__cloud parallax__cloud--1"
+             data-speed="25">
+        <img src="img/parallax/rcloud-2.webp" srcset="img/parallax/rcloud-2.webp, img/parallax/rcloud-2.png" alt=""
+             class="parallax__layer parallax__cloud parallax__cloud--2"
+             data-speed="25">
+        <img src="img/parallax/plane.webp" srcset="img/parallax/plane.webp, img/parallax/plane.png" alt=""
+             class="parallax__layer parallax__plane"
+             data-speed="20">
+    </div>
+    <div class="hero__inner">
+        <div class="container">
+            <h2 class="hero__subtitle">You are on <span class="accent__text">See The City</span></h2>
+            <h1 class="hero__title">Welcome</h1>
+        </div>
+
+    </div>
+</section>
+
+<div id="map" class="map"></div>
+
+<section class="gallery">
+    <header class="section-header">
+        <h2 class="section-header__title">Gallery</h2>
+        <p class="section-header__description">Check user`s pictures from different places and join them</p>
+    </header>
+    <div class="container">
+        <div class="gallery__content">
+            <div class="gallery__item">
+                <div class="gallery__item-wrapper">
+                    <img class="gallery__img" src="img/gallery/salavat.jpg" alt="">
+                    <div class="gallery__info">
+                        <span class="gallery__place">Уфа, Заки Валиди 1</span>
+                        <span class="gallery__author">Jacks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="gallery__item-wrapper">
+                    <img class="gallery__img" src="img/gallery/kmarx.jpg" alt="">
+                    <div class="gallery__info">
+                        <span class="gallery__place">Уфа,  Мустая Карима</span>
+                        <span class="gallery__author">Jacks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="gallery__item-wrapper">
+                    <img class="gallery__img" src="img/gallery/uralsib.jpg" alt="">
+                    <div class="gallery__info">
+                        <span class="gallery__place">Уфа, ул. Революционная</span>
+                        <span class="gallery__author">Jacks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="gallery__item-wrapper">
+                    <img class="gallery__img" src="img/gallery/road.jpg" alt="">
+                    <div class="gallery__info">
+                        <span class="gallery__place">Уфа, проспект Салавата Юлаева</span>
+                        <span class="gallery__author">Jacks</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="add">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-header__title">Share your photo with other</h2>
+            <p class="section-header__description section-header__description--white">Add picture here and see it on
+                the
+                map</p>
+        </header>
+        <form action="upload.php" class="add__form add-form">
+            <input type="file" class="add-form__input" placeholder="Picture link" name="imgUrl">
+            <input type="text" class="add-form__input" placeholder="Your name" name="author">
+            <input type="text" class="add-form__input" placeholder="Where the picture made" name="address">
+            <button class="add-form__button button button--add-form" type="submit">Share</button>
+        </form>
+    </div>
+</section>
+
+
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/map.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>
